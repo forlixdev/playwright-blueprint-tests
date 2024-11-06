@@ -12,6 +12,8 @@ services:
         WORKDIR /home/pwuser/test
         RUN ls -lR
         RUN npm install
+    environment: 
+      - ENV=${ENV}
     command: "npx playwright test"
     volumes:
       - /tmp/playwright-reports:/home/pwuser/test/test-report
