@@ -1,0 +1,68 @@
+# Playwright project
+node_modules/
+test-results/
+playwright-report/
+test-report/
+storageState.json
+/playwright/.cache/
+package-lock.json
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+venv/
+
+# IntelliJ
+.idea
+.idea/starterkit-e2e-tests-playwright.iml
+!.idea/runConfigurations
+!.idea/codeStyles
+!.idea/dictionaries/my_connectis.xml
+*.ipr
+*.iml
+*.iws
+
+# NetBeans
+nb-configuration.xml
+
+# Visual Studio Code
+.vscode
+
+# OSX
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+.m2/local-settings.xml
+
+# Others
+.factorypath
+ObjectStore
+logs
+tmp
+infra/scripts/reporting/python/__pycache__/
+infra/scripts/reporting/python/*.pyc
+infra/scripts/aws-s3/python/__pycache__/*.pyc
+/e2e/.idea/
+/e2e/build/
+/e2e/.allure/
+/e2e/totp-store.json
+/e2e/core
+src/main/resources/local-resources
+./auth
+user.json
+

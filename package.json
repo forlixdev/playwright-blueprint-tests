@@ -1,0 +1,20 @@
+{
+  "name": "playwright-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-dev": "env=dev playwright test",
+    "test-qa": "env=qa playwright test"
+  },
+  "keywords": [],
+  "author": "Francesco Forlivio",
+  "license": "ISC",
+  "devDependencies": {
+    "tslog": "4.9.3",
+    "dotenv": "16.4.5",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.8.7",
+    "@dotenvx/dotenvx": "1.21.1"
+  }
+}

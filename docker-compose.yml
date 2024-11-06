@@ -1,0 +1,18 @@
+services:
+  tests:
+    container_name: tests
+    build:
+      context: .
+      no_cache: true
+      pull: true
+      dockerfile_inline: |
+        FROM mcr.microsoft.com/playwright:v1.48.2-jammy
+        RUN mkdir -p /home/pwuser/test
+        ADD . /home/pwuser/test
+        WORKDIR /home/pwuser/test
+        RUN ls -lR
+        RUN npm install
+    command: "npx playwright test"
+    volumes:
+      - /tmp/playwright-reports:/home/pwuser/test/test-report
+      - /tmp/playwright-results:/home/pwuser/test/test-results

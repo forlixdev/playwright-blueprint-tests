@@ -1,0 +1,7 @@
+reports
+.gitignore
+.git
+test-results
+playwright-report
+test-report
+node_modules
